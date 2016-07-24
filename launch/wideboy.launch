@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15"?>
 
 <launch>
-	  <include file="$(find mip_rover_imu)/launch/mip_rover_imu.launch"/>
+	  <include file="$(find mip_rover_lowlevel)/launch/wideboy.launch"/>
+	  <include file="$(find raspicam)/launch/raspicam.launch"/>
+	  <include file="$(find mip_rover_imu)/launch/wideboy.launch"/>
 </launch>
